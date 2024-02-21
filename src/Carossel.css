@@ -1,0 +1,73 @@
+.carosselle-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .carosselle-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Custom Buttons */
+  .slick-prev, .slick-next {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slick-prev:hover, .slick-next:hover,
+  .slick-prev:focus, .slick-next:focus {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    line-height: 1;
+    color: #333;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+
+  .slick-prev {
+    left: -35px;
+  }
+  
+  .slick-next {
+    right: -35px;
+  }
+  
+
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #333;
+  }
+  
+  /* Hide the default arrows for screen readers */
+  .slick-prev .sr-only, .slick-next .sr-only {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .slick-prev {
+      left: 10px;
+    }
+  
+    .slick-next {
+      right: 10px;
+    }
+  }
+  
